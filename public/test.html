@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Login</title>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+                    *{
+                        padding:0;
+                        margin:0;
+                        box-sizing: border-box;
+                        background-color: #34495e;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                    h2{
+                        text-transform: uppercase;
+                        background-color: inherit;
+                        margin-top:12% ;
+                        font-weight:bold;
+                    }
+                    .container{
+                        background-color: #191919;
+                        display: flex;
+                        flex-direction: column;
+                        color:white;
+                        margin:20px auto;
+                        align-items:center;
+                        font-size:30px;
+                        width:600px;
+                        height:550px;
+                        position: absolute;
+                        top: 40%;
+                        left: 50%;
+                        margin-right: -50%;
+                        transform: translate(-50%, -50%);
+                        text-align:center;
+                    }
+                    input:nth-child(1){
+                        margin-top:60px;
+                    }
+            
+                    input, .login{
+                        border: 2px solid #3498db;
+                        border-radius: 35px;
+                        background-color: inherit;
+                        padding:11px 62px;
+                        margin: 15px auto;
+                        text-align: center; 
+                        font-size:20px;
+                        color:white !important;
+                        transition:0.25s;
+                    }
+                    .login{
+                        color:white;
+                        font-size:23px;
+                        cursor:pointer;
+                        border-color: #1c9b51;
+            
+                    }
+                    .login:hover{
+                        background-color:#0c813b;
+                    }
+                    input:focus{
+                        border-color: #2ecc71;
+                        outline:none;
+                        transform:scale(1.16);
+                        background-color:rgb(27, 28, 31);
+                    }
+                    form{
+                        background-color: inherit;
+                        display:flex;
+                        flex-direction:column;
+                        gap:4px;
+                        width:inherit;
+                    }
+                    p,a{
+                        background-color:inherit;
+                        font-size:17px;
+                        margin:0px 0px 10px 0px;
+                    }
+                    a{
+                        color:#2ecc71;
+                    }
+                    a:hover{
+                        color:#0fa34a;
+                    }
+                    .navs{
+                        margin-top:20px;
+                        align-self: center;
+                        width: 200px;
+                        display:flex;
+                        justify-content:space-between;
+                    }
+
+            
+                </style>
+            </head>
+            
+            <body>
+                <div class="container">
+                    <h2>Reset Password</h2>
+                    <form method="post">
+                        <input placeholder="Password" type="text"/>
+                        <input placeholder="Repeat Password" type="password"/>           
+                        <button class="login" type="submit">Confirm </button>
+
+                        <p class="navs">
+                            <a href="">Login</a>
+                            <a href="">Register</a>
+
+
+                    </form>
+                </div>
+            </body>
+            </html>
