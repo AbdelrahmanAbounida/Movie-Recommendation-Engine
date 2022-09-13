@@ -4,7 +4,6 @@ import './App.css'
 import SearchIcon from './search.svg'
 import MovieCard from './MovieCard'
 
-
 const App = () => {
     
     const [Movies,setMovies] = useState('');
